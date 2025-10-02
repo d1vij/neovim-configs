@@ -1,4 +1,4 @@
--- Loading options
+-- Loading options/init.lua
 require("options")
 
 -- Loading plugins

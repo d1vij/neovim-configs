@@ -39,5 +39,5 @@ vim.opt.termguicolors = true
 -- Allows for stuff like :e filename rather than :e full/path/to/filename
 vim.opt.cmdheight = 0
 
-vim.o.listchars = 'trail:-,nbsp:+,leadmultispace:▏ ,'
+vim.o.listchars = 'trail:-'
 vim.o.list = true
