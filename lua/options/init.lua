@@ -38,6 +38,17 @@ vim.opt.termguicolors = true
 -- Change cd to opened file's directory
 -- Allows for stuff like :e filename rather than :e full/path/to/filename
 vim.opt.cmdheight = 0
+-- Show tildes at end of buffer
+vim.o.fillchars = "eob:~"
 
-vim.o.listchars = 'trail:-'
+-- Show trailing spaces as '-'
 vim.o.list = true
+vim.o.listchars = "trail:-"
+
+-- Show ~ in number line
+vim.api.nvim_create_autocmd("ColorScheme", {
+  callback = function()
+    vim.cmd [[ highlight EndOfBuffer guifg=#555555 ]]
+  end,
+})
+
