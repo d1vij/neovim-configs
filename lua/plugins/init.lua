@@ -1,8 +1,6 @@
 -- LAZYVIM Setup
--- Set the path where lazy.nvim is installed
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
--- Automatically clone lazy.nvim if it doesn't exist
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
     "git",
@@ -13,12 +11,21 @@ if not vim.loop.fs_stat(lazypath) then
   })
 end
 
--- Prepend lazy.nvim to runtime path
 vim.opt.rtp:prepend(lazypath)
 
--- Load plugins via lazy
+-- Load plugins
 require("lazy").setup({
     spec = {
-        {import = "plugins.spec"}
+        { import = "plugins.spec" }
     }
 })
+
+-- Telescope setup
+require("telescope").setup({
+  defaults = {
+    prompt_prefix = "🔍 ",
+    selection_caret = " ",
+    path_display = { "smart" },
+  },
+})
+

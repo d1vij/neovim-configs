@@ -17,18 +17,27 @@ vim.opt.undofile = true
 -- scroll a bit extra horizontally and vertically when at the end/bottomvim.opt.sidescrolloff = 8
 vim.opt.scrolloff = 8
 
+-- Width of tabs in spaces
 vim.opt.tabstop = 4
+-- Manual indent spaces
 vim.opt.shiftwidth = 4
+-- Converts tabs to spaces
 vim.opt.expandtab = true
 vim.opt.autoindent = true
+
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+
 -- Search configuration
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.gdefault = true
-vim.lsp.inlay_hint.enable()
 
 vim.opt.termguicolors = true
+
 -- Change cd to opened file's directory
 -- Allows for stuff like :e filename rather than :e full/path/to/filename
-vim.opt.autochdir = true
 vim.opt.cmdheight = 0
+
+vim.o.listchars = 'trail:-,nbsp:+,leadmultispace:▏ ,'
+vim.o.list = true
