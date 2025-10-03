@@ -28,4 +28,3 @@ require("telescope").setup({
     path_display = { "smart" },
   },
 })
-
