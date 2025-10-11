@@ -36,6 +36,9 @@ vim.opt.gdefault = true
 vim.opt.termguicolors = true
 
 -- Change cd to opened file's directory
+vim.opt.autochdir = true;
+
+
 -- Allows for stuff like :e filename rather than :e full/path/to/filename
 vim.opt.cmdheight = 0
 -- Show tildes at end of buffer
