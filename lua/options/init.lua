@@ -45,7 +45,7 @@ vim.opt.cmdheight = 0
 vim.o.fillchars = "eob:~"
 
 -- Show trailing spaces as '-'
-vim.o.list = true
+vim.o.list =    false 
 vim.o.listchars = "trail:-"
 
 -- Show ~ in number line
