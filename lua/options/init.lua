@@ -18,15 +18,13 @@ vim.opt.undofile = true
 vim.opt.scrolloff = 8
 
 -- Width of tabs in spaces
-vim.opt.tabstop = 4
+vim.opt.tabstop = 2
 -- Manual indent spaces
-vim.opt.shiftwidth = 4
+vim.opt.shiftwidth = 2
+--
 -- Converts tabs to spaces
 vim.opt.expandtab = true
 vim.opt.autoindent = true
-
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
 
 -- Search configuration
 vim.opt.ignorecase = true
