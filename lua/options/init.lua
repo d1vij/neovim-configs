@@ -42,10 +42,8 @@ vim.opt.cmdheight = 0
 -- Show tildes at end of buffer
 vim.o.fillchars = "eob:~"
 
--- Show trailing spaces as '-'
-vim.o.list =    false 
-vim.o.listchars = "trail:-"
-
+-- VertSplit-ted buffer opens on the right side
+vim.opt.splitright = true
 -- Show ~ in number line
 vim.api.nvim_create_autocmd("ColorScheme", {
   callback = function()
